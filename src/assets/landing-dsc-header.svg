@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500" height="700" viewBox="0 0 1500 700">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.38" x2="1" y2="0.35" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2b5876"/>
+      <stop offset="1" stop-color="#4e4376"/>
+    </linearGradient>
+    <filter id="Path_1" x="-16.519" y="-15.527" width="1533.824" height="654.808" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.58"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-landing-dsc-header_">
+      <rect width="1500" height="700"/>
+    </clipPath>
+  </defs>
+  <g id="landing-dsc-header_" data-name="landing-dsc-header " clip-path="url(#clip-landing-dsc-header_)">
+    <rect width="1500" height="700" fill="#fff"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_1)">
+      <path id="Path_1-2" data-name="Path 1" d="M-190.02-29.164,1325.8-33.337v224.87s-152.545-19.9-308.271,39.8-289.769,203.438-439.581,234.4-205.007-33.169-321.308-59.7S65.435,390.549-1.587,423.718-190.02,603.471-190.02,603.471Z" transform="translate(182.5 22.81)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

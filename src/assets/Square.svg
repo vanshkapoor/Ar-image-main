@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="148" height="147" viewBox="0 0 148 147">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#05bcff"/>
+      <stop offset="1" stop-color="#f600ff"/>
+    </linearGradient>
+    <clipPath id="clip-Square">
+      <rect width="148" height="147"/>
+    </clipPath>
+  </defs>
+  <g id="Square" clip-path="url(#clip-Square)">
+    <g id="Square-2" data-name="Square" transform="translate(-1 -0.346)">
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="142.543" height="139.346" transform="translate(4 4)" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="7"/>
+      <path id="Path_6" data-name="Path 6" d="M144,30.5,120.75,17.077V43.923Z" transform="translate(-11.457)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="About" transform="translate(10 133)" fill="#fff" font-size="40" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">About</tspan></text>
+  </g>
+</svg>

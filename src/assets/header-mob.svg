@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="800" viewBox="0 0 500 800">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.422" x2="0.415" y2="0.805" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4d4a60"/>
+      <stop offset="0.278" stop-color="#4423b5"/>
+      <stop offset="1" stop-color="#31d8a0"/>
+    </linearGradient>
+    <filter id="Path_1" x="-9" y="-10.795" width="521.541" height="522.795" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.388"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-header-mob">
+      <rect width="500" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="header-mob" clip-path="url(#clip-header-mob)">
+    <rect width="500" height="800" fill="#fff"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_1)">
+      <path id="Path_1-2" data-name="Path 1" d="M0,295.2H503.541V562.154L0,800Z" transform="translate(0 -300)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

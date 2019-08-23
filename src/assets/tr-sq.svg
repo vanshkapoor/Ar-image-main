@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.04" y1="0.025" x2="0.926" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e61d90"/>
+      <stop offset="1" stop-color="#4f17a1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#7115e6"/>
+      <stop offset="1" stop-color="#e316b3"/>
+    </linearGradient>
+    <clipPath id="clip-tr-sq">
+      <rect width="140" height="140"/>
+    </clipPath>
+  </defs>
+  <g id="tr-sq" clip-path="url(#clip-tr-sq)">
+    <rect width="140" height="140" fill="url(#linear-gradient)"/>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(5 5)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="130" height="130" stroke="none"/>
+      <rect x="0.5" y="0.5" width="129" height="129" fill="none"/>
+    </g>
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="10" cy="10" r="10" transform="translate(106 15)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

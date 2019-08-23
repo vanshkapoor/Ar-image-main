@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f2e7e7"/>
+      <stop offset="1" stop-color="#ec1cdf"/>
+    </linearGradient>
+    <clipPath id="clip-Trianlge_inside_a_Square">
+      <rect width="150" height="150"/>
+    </clipPath>
+  </defs>
+  <g id="Trianlge_inside_a_Square" data-name="Trianlge inside a Square" clip-path="url(#clip-Trianlge_inside_a_Square)">
+    <g id="Trianlge_inside_a_Square-2" data-name="Trianlge inside a Square" transform="translate(-1 -0.599)">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="143.05" height="143.599" transform="translate(4 4)" fill="none" stroke="rgba(255,255,255,0.66)" stroke-width="7"/>
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="14.5" cy="14.5" r="14.5" transform="translate(102.05 19)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="Team" transform="translate(15 133)" fill="#fff" font-size="40" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Team</tspan></text>
+  </g>
+</svg>

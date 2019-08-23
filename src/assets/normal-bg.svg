@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500" height="700" viewBox="0 0 1500 700">
+  <defs>
+    <clipPath id="clip-normal-bg">
+      <rect width="1500" height="700"/>
+    </clipPath>
+  </defs>
+  <g id="normal-bg" clip-path="url(#clip-normal-bg)">
+    <rect width="1500" height="700" fill="#fff"/>
+    <path id="Rectangle_3" data-name="Rectangle 3" d="M0,0H552a64,64,0,0,1,64,64V327a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(0 285)" fill="rgba(0,0,0,0.04)"/>
+  </g>
+</svg>
