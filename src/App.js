@@ -8,6 +8,7 @@ import store from './store.js';
 import setAuthToken from './utils/setAuthToken';
 
 import Landing from './components/landing';
+import Store from './components/store';
 import Image from './components/images';
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
           <div className="App">
             <Switch>
               <Route exact path="/" component={Landing} />
-              <Route exact path="/store" component={Landing} />
+              <Route exact path="/store" component={Store} />
               <Route exact path="/image/:id" component={Image} />
             </Switch>
           </div>

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 // import { registerUser } from '../../actions/authActions'
 import swal from 'sweetalert';
+import Navbar from './navbar';
 
 class Landing extends Component {
     constructor() {
@@ -73,25 +74,10 @@ class Landing extends Component {
         return (
             <div>
 {/* -----navbar start  */}
-<nav class="navbar navbar-expand-lg navbar-dark" style={{"backgroundColor":" #5a8cbd"}}>
-  <a class="navbar-brand" href="/" style={{"fontSize":"4vh","marginLeft":"3%"}}>AR image</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto" style={{"marginRight":"5%"}}>
-      <a class="nav-item nav-link active" style={{"fontSize":"23px"}} href="/my">UPLOAD</a>
-      <a class="nav-item nav-link" style={{"fontSize":"23px"}} href="/store">STORE <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" style={{"fontSize":"23px"}} href="/">CREATE</a>
-      <a class="nav-item nav-link" style={{"fontSize":"23px"}} href="/my">MY CREATIONS</a>
-    </div>
-  </div>
-</nav>
+<Navbar head="file" />
 {/* -----navbar stop */}
 
 {/*  -------form start */}
-
-
 <div className="container">
 
 <div className="container mt-4">
