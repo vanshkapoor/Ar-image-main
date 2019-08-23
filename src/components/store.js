@@ -46,6 +46,22 @@ const Carousel = () => {
 </div>
   )}
 
+  const Cards =() => {
+    return(
+      <div className="col-lg-4 col-sm-12 mb-4 mt-4">
+        <div class="card">
+        <img src={pok} class="card-img-top" alt="..." />
+        <div class="card-body">
+          <strong>Pokemon AR</strong>            
+            <br />
+            <p>An Ar depicting the pokemon Ars</p>
+        <button class="btn btn-primary" style={{"backgroundColor":"#E91E63","borderColor":"#E91E63"}}>BUY</button>
+        </div>
+      </div>
+      </div>
+    )
+  }
+
 
 class Store extends Component {
     constructor() {
@@ -78,6 +94,12 @@ class Store extends Component {
             <div>
               <Navbar head="store"/>
               <Carousel />
+              <div className="container">
+              <div className="row">
+              <Cards />
+              <Cards />
+              </div>
+              </div>
             </div>
         )
     }

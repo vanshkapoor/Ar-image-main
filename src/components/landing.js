@@ -103,7 +103,17 @@ class Landing extends Component {
       <option>5</option>
     </select>
   </div> 
-  <button type="submit" class="btn btn-primary btn-lg "style={{"float":"right","backgroundColor":"#5a8cbd","borderColor":"#5a8cbd"}}>SUBMIT</button>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Price</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Free</option>
+      <option>$10</option>
+      <option>$20</option>
+      <option>$30</option>
+      <option>$40</option>
+    </select>
+  </div> 
+  <button type="submit" class="btn btn-primary btn-lg "style={{"float":"right","backgroundColor":"#5a8cbd","borderColor":"#5a8cbd"}}>Add Product</button>
 </form>
 </div>
 

@@ -7,9 +7,11 @@ import store from './store.js';
 
 import setAuthToken from './utils/setAuthToken';
 
-import Landing from './components/landing';
+import Product from './components/landing';
 import Store from './components/store';
 import Image from './components/images';
+import My from './components/MyCreations';
+import Login from './components/Login';
 
 class App extends Component {
   render() {
@@ -19,9 +21,11 @@ class App extends Component {
         <Router>
           <div className="App">
             <Switch>
-              <Route exact path="/" component={Landing} />
+              <Route exact path="/product" component = {Product} />
+              <Route exact path="/" component={Login} />
               <Route exact path="/store" component={Store} />
               <Route exact path="/image/:id" component={Image} />
+              <Route exact path="/my" component={My} />
             </Switch>
           </div>
         </Router>

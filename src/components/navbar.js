@@ -11,7 +11,7 @@ const Navbar =(props) => {
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto" style={{"marginRight":"5%"}}>
-      {props.head == "file"?<Link class="nav-item nav-link active" style={{"fontSize":"23px"}} to="/">UPLOAD</Link>:<Link class="nav-item nav-link" style={{"fontSize":"23px"}} to="/">UPLOAD</Link>}
+      {props.head == "file"?<Link class="nav-item nav-link active" style={{"fontSize":"23px"}} to="/product">UPLOAD</Link>:<Link class="nav-item nav-link" style={{"fontSize":"23px"}} to="/product">UPLOAD</Link>}
       {props.head == "store"?<Link class="nav-item nav-link active" style={{"fontSize":"23px"}} to="/store">STORE</Link>:<Link class="nav-item nav-link" style={{"fontSize":"23px"}} to="/store">STORE</Link>}
       {props.head == "my"?<Link class="nav-item nav-link active" style={{"fontSize":"23px"}} to="/my">MY CREATIONS</Link>:<Link class="nav-item nav-link" style={{"fontSize":"23px"}} to="/my">MY CREATIONS</Link>}
     </div>
