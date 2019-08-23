@@ -30,7 +30,7 @@ class Image extends Component {
 
     render() {
         return (
-            <div>
+            <>
                  <a-scene embedded arjs="sourceType: webcam;">
 
 <a-marker type = "pattern" url = "https://cdn.glitch.com/1b5c5ba0-db58-4f37-8aa7-f69ae3761543%2Fpattern-logo-pattern.patt?v=1566157398906" >
@@ -49,7 +49,7 @@ radius="3.0" scale="0.5 0.5 0.5" height= "0.05" segments-height="512" segments-w
  <a-entity camera></a-entity>
      
    </a-scene>
-            </div>
+            </>
         )
     }
 }
