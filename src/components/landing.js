@@ -12,57 +12,41 @@ class Landing extends Component {
     constructor() {
         super();
         this.state = {
-            firstname: '',
-            lastname: '',
-            branch: '',
-            email: '',
-            phoneno: '',
-            password: '',
-            team: '',
-            designation: ''
+            title:'',
+            description:'',
+            category:'',
+            file:null,
+            marker_file:null,
         }
     }
-    // componentDidMount() {
-    //     if (this.props.auth.isAuthenticated) {
-    //         this.props.history.push('/');
-    //     }
-    // }
 
+    fileChangeHandler = e => {
+        console.log(e.target.files[0])
+        // console.log(e.target.value)
+        this.setState({[e.target.name]: e.target.files[0]})
+        console.log(this.state.file)
+    }
 
-    // onChange = (e) => {
-    //     this.setState({
-    //         [e.target.name]: e.target.value
-    //     });
-    // }
+ 
 
-    // onSubmit = (e) => {
-    //     e.preventDefault();
+    onChange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    }
 
-    //     swal("Type in the DSC Code to Landing:", {
-    //         content: "input",
-    //     })
-    //         .then((value) => {
-    //             if (value == "dscisthesecretofmyenergy") {
-    //                 const newuser = {
-    //                     first_name: this.state.firstname,
-    //                     last_name: this.state.lastname,
-    //                     branch: this.state.branch,
-    //                     email: this.state.email,
-    //                     phoneNumber: this.state.phoneno,
-    //                     password: this.state.password,
-    //                     team: this.state.team,
-    //                     designation: this.state.designation
-    //                 }
-    //                 newuser.username = this.state.firstname + " " + this.state.lastname;
-    //                 console.log(newuser);
-    //                 //communicating with the backend
-    //                 this.props.LandingUser(newuser, this.props.history);
-    //             } else {
-    //                 swal(`You typed ${value}, seriously😂 ..sorry wrong code`);
+    onSubmit = (e) => {
+        e.preventDefault();
 
-    //             }
-    //         });
-    // }
+        const newuser = {
+            title:this.state.title,
+            description:this.state.description,
+            category:this.state.category,
+            file:this.state.file,
+            marker_file:this.state.marker_file
+        }
+        console.log(newuser);
+    }
 
     render() {
         const StyledH = styled.h1`
@@ -84,23 +68,23 @@ class Landing extends Component {
        <h1 className="text-center text-muted">file upload</h1>
 </div>
 
-<form>
+<form onSubmit={this.onSubmit} encType="multipart/form-data" >
   <div class="form-group">
     <label for="exampleFormControlInput1">Title</label>
-    <input type="text" class="form-control" name="title" id="exampleFormControlInput1" placeholder="The board" />
+    <input type="text" class="form-control" name="title" onChange={this.onChange} id="exampleFormControlInput1" placeholder="The board" />
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Description</label>
-    <input type="text" class="form-control" name="description" id="exampleFormControlInput1" placeholder="Description" />
+    <input type="text" class="form-control" name="description" onChange={this.onChange} id="exampleFormControlInput1" placeholder="Description" />
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Category</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
+    <select class="form-control" id="exampleFormControlSelect1" value={this.state.category} name="category" onChange={this.onChange}>
+      <option value="animals">animals</option>
+      <option value="food">food</option>
+      <option value="physics">physics</option>
+      <option value="maths">maths</option>
+      <option value="chemistry">chemistry</option>
     </select>
   </div> 
   <div class="form-group">
@@ -113,6 +97,26 @@ class Landing extends Component {
       <option>$40</option>
     </select>
   </div> 
+  <div className="form-group">
+                           <div className="input-field pt-2">
+                               <label className="text-left" htmlFor="case_file">File</label>
+                               <input className="form-control"
+                                   type="file"
+                                   name="file"
+                                   onChange={this.fileChangeHandler}
+                               />
+                            </div>
+  </div>
+  <div className="form-group">
+                           <div className="input-field pt-2">
+                               <label className="text-left" htmlFor="case_file">Marker/Target File</label>
+                               <input className="form-control"
+                                   type="file"
+                                   name="marker_file"
+                                   onChange={this.fileChangeHandler}
+                               />
+                            </div>
+  </div>
   <button type="submit" class="btn btn-primary btn-lg "style={{"float":"right","backgroundColor":"#5a8cbd","borderColor":"#5a8cbd"}}>Add Product</button>
 </form>
 </div>
