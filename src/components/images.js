@@ -28,51 +28,27 @@ class Image extends Component {
     // }
 
 
-    // onChange = (e) => {
-    //     this.setState({
-    //         [e.target.name]: e.target.value
-    //     });
-    // }
-
-    // onSubmit = (e) => {
-    //     e.preventDefault();
-
-    //     swal("Type in the DSC Code to Landing:", {
-    //         content: "input",
-    //     })
-    //         .then((value) => {
-    //             if (value == "dscisthesecretofmyenergy") {
-    //                 const newuser = {
-    //                     first_name: this.state.firstname,
-    //                     last_name: this.state.lastname,
-    //                     branch: this.state.branch,
-    //                     email: this.state.email,
-    //                     phoneNumber: this.state.phoneno,
-    //                     password: this.state.password,
-    //                     team: this.state.team,
-    //                     designation: this.state.designation
-    //                 }
-    //                 newuser.username = this.state.firstname + " " + this.state.lastname;
-    //                 console.log(newuser);
-    //                 //communicating with the backend
-    //                 this.props.LandingUser(newuser, this.props.history);
-    //             } else {
-    //                 swal(`You typed ${value}, seriously😂 ..sorry wrong code`);
-
-    //             }
-    //         });
-    // }
-
     render() {
-        const StyledH = styled.h1`
-        font-size: 30px;
-        color: grey;
-        /* color: #3FC6D0; */
-        text-align: center;
-        `
         return (
             <div>
-                <h1>images</h1>           
+                 <a-scene embedded arjs="sourceType: webcam;">
+
+<a-marker type = "pattern" url = "https://cdn.glitch.com/1b5c5ba0-db58-4f37-8aa7-f69ae3761543%2Fpattern-logo-pattern.patt?v=1566157398906" >
+<a-cylinder src="url(https://cdn.glitch.com/1b5c5ba0-db58-4f37-8aa7-f69ae3761543%2Falt-logo.png?v=1566270247992https://cdn.glitch.com/1b5c5ba0-db58-4f37-8aa7-f69ae3761543%2Falt-logo.png?v=1566270247992(75 kB)
+https://cdn.glitch.com/1b5c5ba0-db58-4f37-8aa7-f69ae3761543%2Falt-logo.png?v=1566270247992https://cdn.glitch.com/1b5c5ba0-db58-4f37-8aa7-f69ae3761543%2Falt-logo.png?v=1566270247992)" 
+radius="3.0" scale="0.5 0.5 0.5" height= "0.05" segments-height="512" segments-width="512" >
+      <a-animation attribute="rotation"
+                 dur="1000"
+                 from= "-15 10 10"
+                 to="10 -15 0"
+                 direction="alternate-reverse"
+                 repeat="indefinite">
+  </a-animation>
+</a-cylinder>
+</a-marker>
+ <a-entity camera></a-entity>
+     
+   </a-scene>
             </div>
         )
     }

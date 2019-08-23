@@ -73,15 +73,17 @@ class Landing extends Component {
         return (
             <div>
 {/* -----navbar start  */}
-                <nav class="navbar navbar-expand-lg navbar-dark " style={{"backgroundColor":" #5a8cbd"}}>
-  <a class="navbar-brand" href="#" style={{"fontSize":"4vh"}}>AR image</a>
+<nav class="navbar navbar-expand-lg navbar-dark" style={{"backgroundColor":" #5a8cbd"}}>
+  <a class="navbar-brand" href="/" style={{"fontSize":"4vh","marginLeft":"3%"}}>AR image</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto" style={{"marginRight":"5%"}}>
-      <a class="nav-item nav-link active" style={{"fontSize":"23px"}} href="#">STORE <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" style={{"fontSize":"23px"}} href="#">CREATE</a>
+      <a class="nav-item nav-link active" style={{"fontSize":"23px"}} href="/my">UPLOAD</a>
+      <a class="nav-item nav-link" style={{"fontSize":"23px"}} href="/store">STORE <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" style={{"fontSize":"23px"}} href="/">CREATE</a>
+      <a class="nav-item nav-link" style={{"fontSize":"23px"}} href="/my">MY CREATIONS</a>
     </div>
   </div>
 </nav>

@@ -13,16 +13,16 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <meta name="theme-color" content="#000000" /> 
     
-    <!-- for SEO -->
-    <meta name="description" content="The Official website of Developer Student Club Bhartia Vidyapeeth College of Engineering" />
-    <meta name="keywords" content="DSC, Developer Student Club, BVP, Bhartia Vidyapeeth" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js">
+    </script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js">
+    </script>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -40,7 +40,7 @@
     -->
     <title>AR IMAGE</title>
   </head>
-  <body style="overflow-y: scroll;">
+  <body style="margin : 0px; overflow: hidden;">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
