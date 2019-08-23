@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 // import { registerUser } from '../../actions/authActions'
 import swal from 'sweetalert';
 import Navbar from './navbar';
+import {addForm} from '../actions/FormActions';
 
 class Landing extends Component {
     constructor() {
@@ -46,6 +47,7 @@ class Landing extends Component {
             marker_file:this.state.marker_file
         }
         console.log(newuser);
+        this.props.addForm(newuser);
     }
 
     render() {
@@ -133,5 +135,5 @@ class Landing extends Component {
 //     auth: state.auth,
 // });
 
-export default Landing;
-// export default connect(mapStateToProps, { LandingUser })(withRouter(Landing));
+// export default Landing;
+export default connect(null, { addForm })(withRouter(Landing));
